@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . .
 
+RUN chmod +x gradlew
 RUN ./gradlew build --no-daemon
 
 EXPOSE 8080
